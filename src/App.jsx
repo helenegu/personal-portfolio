@@ -7,12 +7,12 @@ import NoPage from './pages/NoPage';
 const App =()=> {
   return (
     <div>
-    <BrowserRouter>
+    <BrowserRouter basename="/personal-portfolio">
     <Routes>
       <Route index element={<Home/>}/>
-      <Route path="/personal-portfolio" element={<Home/>}/>
-      <Route path="/personal-portfolio/about" element={<About/>}/>
-      <Route path="/personal-portfolio/contact" element={<Contactt/>}/>
+      <Route path="/home" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/contact" element={<Contactt/>}/>
       <Route path="*" element={<NoPage/>}/>
       </Routes>
       
