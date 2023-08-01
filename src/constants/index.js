@@ -203,7 +203,7 @@ const projects = [
       },
       {
         name: "Research",
-        color: "green-text-gradient",
+        color: "skyblue-text-gradient",
       },
       {
         name: "Coding",
@@ -220,7 +220,7 @@ const projects = [
     tags: [
       {
         name: "Design",
-        color: "blue-text-gradient",
+        color: "purple-text-gradient",
       },
       {
         name: "Entrepreneurship",
@@ -241,7 +241,7 @@ const projects = [
     },
     {
       name: "Sustainability",
-      color: "green-text-gradient",
+      color: "skyblue-text-gradient",
     },
   ],
   image: sustainabilityblog,
