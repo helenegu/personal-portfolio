@@ -1,5 +1,5 @@
 
-    export default function Aboutt(){
+    export default function About(){
         return (
             <>
             <p>about</p>
