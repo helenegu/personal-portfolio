@@ -1,4 +1,5 @@
 How to start:
+1. npm run dev
 
 How to update deployment:
 1. git add dist -f
