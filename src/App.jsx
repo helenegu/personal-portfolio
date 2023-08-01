@@ -1,24 +1,23 @@
-import {BrowserRouter} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from './pages/Home';
+import Aboutt from './pages/Aboutt';
+import Contactt from './pages/Contactt';
+import NoPage from './pages/NoPage';
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar,
-Tech, Works,  StarsCanvas} from './components';
 const App =()=> {
   return (
+    <div>
     <BrowserRouter>
-    <div className='relative z-0 bg-cream'>
-      <div className="bg-cover bg-no-repeat bg-center"> {/*can add bg-hero-pattern*/}
-      <Navbar />
-      <Hero/>
-      </div>
-      <About/>
-      <Experience/>
-      <Works/>
-        <div className="relative z-0">
-        <Contact/>
-        <StarsCanvas/>
-        </div>
-      </div>
+    <Routes>
+      <Route index element={<Home/>}/>
+      <Route path="/personal-portfolio" element={<Home/>}/>
+      <Route path="/personal-portfolio/about" element={<Aboutt/>}/>
+      <Route path="/personal-portfolio/contact" element={<Contactt/>}/>
+      <Route path="*" element={<NoPage/>}/>
+      </Routes>
+      
     </BrowserRouter>
+    </div>
   )
 }
 
