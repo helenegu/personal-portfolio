@@ -1,8 +1,8 @@
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar,
     Tech, Works,  StarsCanvas} from '../components';
-
-    export default function AboutPage(){
+    
+   export default function ContactPage(){
         return (
             <>
             <div className='relative z-0 bg-cream'>

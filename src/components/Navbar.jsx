@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 import {styles} from '../styles';
 import {navLinks} from '../constants';
-import {logo, menu, close }from '../assets';
+import {logo, menu, close } from '../assets';
+//import { PersonalDropdown } from './PersonalDropdown';
 
 const Navbar = () => {
   const[active,setActive]= useState("");
@@ -44,7 +45,7 @@ const Navbar = () => {
                 >
                 <a href={`/personal-portfolio/${link.id}`}>{link.title}</a>
               </li>
-            ))}
+))}
           </ul>
 
           <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -78,7 +79,7 @@ const Navbar = () => {
               >
                 <a href={`/personal-portfolio/${link.id}`}>{link.title}</a>
               </li>
-            )
+                  )
             )}
           </ul>
         </div>
@@ -89,3 +90,18 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+/*if (item.title === "Personal") {
+  return (
+    <li
+      key={item.id}
+      className={item.cName}
+      onMouseEnter={() => setDropdown(true)}
+      onMouseLeave={() => setDropdown(false)}
+    >
+      <Link to={item.path}>{item.title}</Link>
+      {dropdown && <PersonalDropdown />}
+    </li>
+  );
+}
+*/
